@@ -9,23 +9,23 @@ import ButtonAdd from "../components/ButtonAdd";
 function PlantDash(props) {
   return (
     <View style={styles.container}>
-      <View style={styles.materialButtonHamburgerRow}>
+      <View style={styles.MenuHamburgerRow}>
         <MaterialButtonHamburger
-          style={styles.materialButtonHamburger}></MaterialButtonHamburger>
+          style={styles.MenuHamburger}></MaterialButtonHamburger>
         <Image
           source={require("../assets/images/ahorta-logo.c6bd66883.png")}
           resizeMode="contain"
-          style={styles.image}></Image>
+          style={styles.Logo}></Image>
         <Avatar style={styles.avatar}></Avatar>
       </View>
-      <Text style={styles.mangericao}>My Plants</Text>
-      <Text style={styles.text}>Alerts</Text>
-      <CardAlerts style={styles.materialCardWithoutImage1}></CardAlerts>
-      <View style={styles.materialCardWithoutImageRow}>
-        <CardPlantView01 style={styles.materialCardWithoutImage}></CardPlantView01>
-        <CardPlantView01 style={styles.materialCardWithoutImage2}></CardPlantView01>
+      <Text style={styles.LblMyPlants}>My Plants</Text>
+      <Text style={styles.LblAlerts}>Alerts</Text>
+      <CardAlerts style={styles.CardAlerts}></CardAlerts>
+      <View style={styles.CardViewRow}>
+        <CardPlantView01 style={styles.CardPant01}></CardPlantView01>
+        <CardPlantView01 style={styles.CardPant02}></CardPlantView01>
       </View>
-      <ButtonAdd style={styles.materialButtonShare}></ButtonAdd>
+      <ButtonAdd style={styles.ButtonAdd}></ButtonAdd>
     </View>
   );
 }
@@ -37,14 +37,14 @@ const styles = StyleSheet.create({
     borderColor: "rgba(98,98,98,1)",
     borderWidth: 0
   },
-  materialButtonHamburger: {
+  MenuHamburger: {
     width: 36,
     height: 36,
     backgroundColor: "rgba(4,4,4,1)",
     borderRadius: 10,
     marginTop: 22
   },
-  image: {
+  Logo: {
     width: 91,
     height: 45,
     marginLeft: 83
@@ -56,28 +56,28 @@ const styles = StyleSheet.create({
     marginLeft: 70,
     marginTop: 16
   },
-  materialButtonHamburgerRow: {
+  MenuHamburgerRow: {
     height: 63,
     flexDirection: "row",
     marginTop: 34,
     marginLeft: 16,
     marginRight: 15
   },
-  mangericao: {
+  LblMyPlants: {
     color: "#121212",
     fontSize: 30,
     fontFamily: "arial-regular",
     marginTop: 36,
     marginLeft: 16
   },
-  text: {
+  LblAlerts: {
     color: "#121212",
     fontSize: 20,
     fontFamily: "arial-regular",
     marginTop: 50,
     marginLeft: 16
   },
-  materialCardWithoutImage1: {
+  CardAlerts: {
     width: 329,
     height: 86,
     backgroundColor: "rgba(251,241,241,1)",
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
     marginLeft: 15
   },
-  materialCardWithoutImage: {
+  CardPant01: {
     width: 177,
     height: 238,
     elevation: 6,
@@ -108,7 +108,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.06,
     shadowRadius: 2
   },
-  materialCardWithoutImage2: {
+  CardPant02: {
     width: 177,
     height: 238,
     elevation: 6,
@@ -122,14 +122,14 @@ const styles = StyleSheet.create({
     shadowRadius: 2,
     marginLeft: 16
   },
-  materialCardWithoutImageRow: {
+  CardViewRow: {
     height: 238,
     flexDirection: "row",
     marginTop: 41,
     marginLeft: 15,
     marginRight: -25
   },
-  materialButtonShare: {
+  ButtonAdd: {
     width: 56,
     height: 56,
     marginTop: 22,

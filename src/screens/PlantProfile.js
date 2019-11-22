@@ -9,35 +9,35 @@ import CardTemp from "../components/CardTemp";
 function PlantProfile(props) {
   return (
     <View style={styles.container}>
-      <View style={styles.materialButtonHamburgerRow}>
-        <BntBack style={styles.materialButtonHamburger}></BntBack>
+      <View style={styles.ButtonBackRow}>
+        <BntBack style={styles.ButtonBack}></BntBack>
         <Image
           source={require("../assets/images/ahorta-logo.c6bd66882.png")}
           resizeMode="contain"
-          style={styles.logo}>
+          style={styles.Logo}>
         </Image>
       </View>
-      <Text style={styles.TexInputNamePlant}>Basil</Text>
-      <Text style={styles.TexInputNameWeeks}>22 Weeks</Text>
+      <Text style={styles.LblNamePlant}>Basil</Text>
+      <Text style={styles.LblNameWeeks}>22 Weeks</Text>
       <View style={styles.plant01StackStackRow}>
         <View style={styles.plant01StackStack}>
           <View style={styles.plant01Stack}>
             <Image
               source={require("../assets/images/plant01.fw.png")}
               resizeMode="contain"
-              style={styles.plant01}>
+              style={styles.ImagePlant}>
             </Image>
             <ImageBackground
               source={require("../assets/images/fertilizer2.png")}
               resizeMode="contain"
-              style={styles.image}
+              style={styles.ImageBackground}
               imageStyle={styles.image_imageStyle}>
             </ImageBackground>
           </View>
-          <CardTemp style={styles.materialCardWithoutImageTemp}></CardTemp>
-          <CardLight style={styles.materialCardWithoutImageLight}></CardLight>
-          <CardHumidity style={styles.materialCardWithoutImageHumidity}></CardHumidity>
-          <CardFertilizer style={styles.materialCardWithoutImageFertilizer}></CardFertilizer>
+          <CardTemp style={styles.CardTemp}></CardTemp>
+          <CardLight style={styles.CardLight}></CardLight>
+          <CardHumidity style={styles.CardHumidity}></CardHumidity>
+          <CardFertilizer style={styles.CardFertilizer}></CardFertilizer>
         </View>
       </View>
     </View>
@@ -49,45 +49,45 @@ const styles = StyleSheet.create({
     backgroundColor: "#ffffff",
     flex: 1
   },
-  materialButtonHamburger: {
+  ButtonBack: {
     width: 36,
     height: 36,
     borderRadius: 10,
     marginTop: 12
   },
-  logo: {
+  Logo: {
     width: 91,
     height: 45,
     marginLeft: 83
   },
-  materialButtonHamburgerRow: {
+  ButtonBackRow: {
     height: 48,
     flexDirection: "row",
     marginTop: 41,
     marginLeft: 16,
     marginRight: 134
   },
-  TexInputNamePlant: {
+  LblNamePlant: {
     color: "#121212",
     fontSize: 30,
     fontFamily: "arial-regular",
     marginTop: 33,
     marginLeft: 17
   },
-  TexInputNameWeeks: {
+  LblNameWeeks: {
     color: "rgba(0,0,0,1)",
     fontSize: 15,
     marginTop: 13,
     marginLeft: 17
   },
-  plant01: {
+  ImagePlant: {
     top: 0,
     left: 233,
     width: 244,
     height: 385,
     position: "absolute"
   },
-  image: {
+  ImageBackground: {
     top: 184,
     left: 0,
     width: 671,
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
     position: "absolute"
   },
   image_imageStyle: {},
-  materialCardWithoutImageTemp:{
+  CardTemp:{
      marginLeft:140,
      marginTop:15,
      width: 83,
@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
      shadowRadius: 2,
      overflow: "visible"
   },
-  materialCardWithoutImageLight:{
+  CardLight:{
     marginLeft:140,
     marginTop:15,
     width: 84,
@@ -132,7 +132,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.06,
     shadowRadius: 2
   },
-  materialCardWithoutImageHumidity:{
+  CardHumidity:{
     marginLeft:140,
     marginTop:15,
     width: 83,
@@ -150,7 +150,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.06,
     shadowRadius: 2
   },
-  materialCardWithoutImageFertilizer:{
+  CardFertilizer:{
     marginLeft:140,
     marginTop:15,
     width: 83,
@@ -178,12 +178,6 @@ const styles = StyleSheet.create({
   plant01StackStack: {
     width: 671,
     height: 660
-  },
-  mangericao2: {
-    color: "#121212",
-    fontSize: 35,
-    marginLeft: 31,
-    marginTop: 30
   },
   plant01StackStackRow: {
     height: 660,

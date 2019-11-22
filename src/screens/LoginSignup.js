@@ -6,7 +6,7 @@ import ButtonLogin from "../components/ButtonLogin";
 function LoginSignup(props) {
   return (
     <View style={styles.container}>
-      <View style={styles.imageStack}>
+      <View style={styles.ImageView}>
         <Image
           source={require("../assets/images/undraw_environment_iaus.png")}
           resizeMode="contain"
@@ -15,11 +15,11 @@ function LoginSignup(props) {
         <Image
           source={require("../assets/images/ahorta-logo.c6bd66884.png")}
           resizeMode="contain"
-          style={styles.image2}
+          style={styles.Logo}
         ></Image>
       </View>
-      <ButtonCadastrar style={styles.materialButtonDark1}></ButtonCadastrar>
-      <ButtonLogin style={styles.buttonLogin}></ButtonLogin>
+      <ButtonCadastrar style={styles.ButtonSignup}></ButtonCadastrar>
+      <ButtonLogin style={styles.ButtonLogin}></ButtonLogin>
     </View>
   );
 }
@@ -36,27 +36,27 @@ const styles = StyleSheet.create({
     height: 263,
     position: "absolute"
   },
-  image2: {
+  Logo: {
     top: 0,
     width: 125,
     height: 106,
     position: "absolute",
     left: 65
   },
-  imageStack: {
+  ImageView: {
     width: 255,
     height: 365,
     marginTop: 69,
     marginLeft: 52
   },
-  materialButtonDark1: {
+  ButtonSignup: {
     width: 212,
     height: 48,
     borderRadius: 20,
     marginTop: 67,
     alignSelf: "center"
   },
-  buttonLogin: {
+  ButtonLogin: {
     width: 212,
     height: 48,
     borderRadius: 20,

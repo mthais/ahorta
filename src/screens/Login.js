@@ -8,20 +8,20 @@ import ButtonLogin from "../components/ButtonLogin";
 function Login(props) {
   return (
     <View style={styles.container}>
-      <View style={styles.materialButtonHamburger1Row}>
-        <BntBack style={styles.materialButtonHamburger1}></BntBack>
+      <View style={styles.ButtonBackRow}>
+        <BntBack style={styles.ButtonBack}></BntBack>
         <Image
           source={require("../assets/images/ahorta-logo.c6bd66887.png")}
           resizeMode="contain"
-          style={styles.image}>
+          style={styles.Logo}>
         </Image>
       </View>
-      <InputEmail style={styles.materialMessageTextbox2}></InputEmail>
-      <InputPassword style={styles.materialMessageTextbox3}></InputPassword>
-      <ButtonLogin style={styles.materialButtonDark1}></ButtonLogin>
-      <View style={styles.newUserRow}>
-        <Text style={styles.newUser}>New user?</Text>
-        <Text style={styles.lblSignup}>SIGNUP</Text>
+      <InputEmail style={styles.InputEmail}></InputEmail>
+      <InputPassword style={styles.InputPassword}></InputPassword>
+      <ButtonLogin style={styles.ButtonLogin}></ButtonLogin>
+      <View style={styles.LblRow}>
+        <Text style={styles.LblnewUser}>New user?</Text>
+        <Text style={styles.LblSignup}>SIGNUP</Text>
       </View>
     </View>
   );
@@ -32,49 +32,49 @@ const styles = StyleSheet.create({
     backgroundColor: "#ffffff",
     flex: 1
   },
-  materialButtonHamburger1: {
+  ButtonBack: {
     width: 36,
     height: 36,
     borderRadius: 10,
     marginTop: 17
   },
-  image: {
+  Logo: {
     width: 132,
     height: 122,
     marginLeft: 58
   },
-  materialButtonHamburger1Row: {
+  ButtonBackRow: {
     height: 122,
     flexDirection: "row",
     marginTop: 36,
     marginLeft: 16,
     marginRight: 118
   },
-  materialMessageTextbox2: {
+  InputEmail: {
     width: 247,
     height: 90,
     marginTop: 80,
     marginLeft: 33
   },
-  materialMessageTextbox3: {
+  InputPassword: {
     width: 245,
     height: 90,
     marginLeft: 35
   },
-  materialButtonDark1: {
+  ButtonLogin: {
     width: 212,
     height: 48,
     borderRadius: 20,
     marginTop: 90,
     alignSelf: "center"
   },
-  newUser: {
+  LblnewUser: {
     color: "rgba(18,17,17,1)",
     fontSize: 16,
     fontFamily: "arial-regular",
     lineHeight: 16
   },
-  lblSignup: {
+  LblSignup: {
     color: "rgba(26,36,203,1)",
     fontSize: 16,
     fontFamily: "arial-regular",
@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
     marginLeft: 3,
     marginTop: 2
   },
-  newUserRow: {
+  LblRow: {
     height: 18,
     flexDirection: "row",
     marginTop: 23,

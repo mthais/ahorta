@@ -9,23 +9,23 @@ import ButtonSignup from "../components/ButtonSignup";
 function Signup(props) {
   return (
     <View style={styles.container}>
-      <View style={styles.materialButtonHamburger1Row}>
-        <BntBack style={styles.materialButtonHamburger1}></BntBack>
+      <View style={styles.ButtonBackRow}>
+        <BntBack style={styles.ButtonBack}></BntBack>
         <Image
           source={require("../assets/images/ahorta-logo.c6bd66886.png")}
           resizeMode="contain"
-          style={styles.image}
-        ></Image>
+          style={styles.Logo}>
+        </Image>
       </View>
-      <View style={styles.materialMessageTextbox1Stack}>
-        <InputName style={styles.materialMessageTextbox1}></InputName>
-        <InputEmail style={styles.materialMessageTextbox2}></InputEmail>
-        <InputPassword style={styles.materialMessageTextbox3}></InputPassword>
+      <View style={styles.InputView}>
+        <InputName style={styles.InputName}></InputName>
+        <InputEmail style={styles.InputEmail}></InputEmail>
+        <InputPassword style={styles.InputPassword}></InputPassword>
       </View>
-      <ButtonSignup style={styles.materialButtonDark1}></ButtonSignup>
-      <View style={styles.loremIpsumRow}>
-        <Text style={styles.loremIpsum}>Do you have an account?</Text>
-        <Text style={styles.login}>LOGIN</Text>
+      <ButtonSignup style={styles.ButtonSignup}></ButtonSignup>
+      <View style={styles.LblRow}>
+        <Text style={styles.LblAccount}>Do you have an account?</Text>
+        <Text style={styles.LblLogin}>LOGIN</Text>
       </View>
     </View>
   );
@@ -36,71 +36,71 @@ const styles = StyleSheet.create({
     backgroundColor: "#ffffff",
     flex: 1
   },
-  materialButtonHamburger1: {
+  ButtonBack: {
     width: 36,
     height: 36,
     borderRadius: 10,
     marginTop: 25
   },
-  image: {
+  Logo: {
     width: 132,
     height: 122,
     marginLeft: 62
   },
-  materialButtonHamburger1Row: {
+  ButtonBackRow: {
     height: 122,
     flexDirection: "row",
     marginTop: 28,
     marginLeft: 16,
     marginRight: 114
   },
-  materialMessageTextbox1: {
+  InputName: {
     top: 0,
     left: 2,
     width: 237,
     height: 90,
     position: "absolute"
   },
-  materialMessageTextbox2: {
+  InputEmail: {
     top: 76,
     left: 0,
     width: 237,
     height: 90,
     position: "absolute"
   },
-  materialMessageTextbox3: {
+  InputPassword: {
     top: 153,
     left: 0,
     width: 237,
     height: 90,
     position: "absolute"
   },
-  materialMessageTextbox1Stack: {
+  InputView: {
     width: 239,
     height: 243,
     marginTop: 71,
     marginLeft: 32
   },
-  materialButtonDark1: {
+  ButtonSignup: {
     width: 212,
     height: 48,
     borderRadius: 20,
     marginTop: 43,
     alignSelf: "center"
   },
-  loremIpsum: {
+  LblAccount: {
     color: "rgba(58,58,59,1)",
     fontSize: 16,
     fontFamily: "arial-regular",
     lineHeight: 16
   },
-  login: {
+  LblLogin: {
     color: "rgba(35,55,160,1)",
     fontSize: 16,
     fontFamily: "arial-regular",
     lineHeight: 16
   },
-  loremIpsumRow: {
+  LblRow: {
     height: 16,
     flexDirection: "row",
     marginTop: 20,
