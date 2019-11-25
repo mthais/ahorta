@@ -27,17 +27,13 @@ function PlantProfile(props) {
               resizeMode="contain"
               style={styles.ImagePlant}>
             </Image>
-            <ImageBackground
-              source={require("../assets/images/fertilizer2.png")}
-              resizeMode="contain"
-              style={styles.ImageBackground}
-              imageStyle={styles.image_imageStyle}>
-            </ImageBackground>
           </View>
           <CardTemp style={styles.CardTemp}></CardTemp>
           <CardLight style={styles.CardLight}></CardLight>
           <CardHumidity style={styles.CardHumidity}></CardHumidity>
           <CardFertilizer style={styles.CardFertilizer}></CardFertilizer>
+          <Text style={styles.LblInformations}>Informations</Text>
+          <Text style={styles.LblDescription}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </Text>
         </View>
       </View>
     </View>
@@ -87,14 +83,6 @@ const styles = StyleSheet.create({
     height: 385,
     position: "absolute"
   },
-  ImageBackground: {
-    top: 184,
-    left: 0,
-    width: 671,
-    height: 455,
-    position: "absolute"
-  },
-  image_imageStyle: {},
   CardTemp:{
      marginLeft:140,
      marginTop:15,
@@ -167,6 +155,21 @@ const styles = StyleSheet.create({
     shadowColor: "rgba(0,0,0,1)",
     shadowOpacity: 0.06,
     shadowRadius: 2
+  },
+  LblInformations:{
+    marginLeft:145,
+    marginTop:40,
+    color: "#121212",
+    fontSize: 20,
+    fontFamily: "arial-regular",
+  },
+  LblDescription:{
+    marginLeft:145,
+    marginTop:15,
+    width: 350,
+    color: "#121212",
+    fontSize: 12,
+    fontFamily: "arial-regular",
   },
   plant01Stack: {
     top: 21,
